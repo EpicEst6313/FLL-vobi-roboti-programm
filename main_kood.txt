@@ -4,7 +4,7 @@ from hub import port, button, light_matrix
 varvi_andm = {}
 kalib_tehtud = False
 
-MISSIOONI_ARV = 4
+MISSIOONI_ARV = 3
 RATTA_D = 5.6
 RATASTE_VAH_KAUGUS = 11.3
 TEISENDUS_TEGUR = 0.6
@@ -14,7 +14,7 @@ motor_pair.pair(motor_pair.PAIR_1, port.B, port.A)
 
 def vektor(cal_punkt:tuple[int], moot_punkt:tuple[int, int, int, int]):
     """
-    arvutab vektori antud numbrite järgi ning annab selle kauguse vahe
+    arvutab vektori antud listidele järgi ning annab selle kauguse vahe
 
     ### Parameetrid:
     - **cal_punkt** (`list[int]`):
@@ -219,7 +219,7 @@ def varvi_tuvastus():
 async def soit_1():
     """
     Käivitab esimese missiooni, juhib roboti liikumist ja pööramist vastavalt ettenähtud ülesandele
-    info sõidu kohta leiab drivest sõitude kaustast või dokumentatsioonist
+    info sõidu kohta leiab drivest sõitude kaustast või roboti disaini dokumentatsioonist soit_1 mime alt
 
     """
     await paar1_soitmine(0, 1050, 200)
@@ -244,13 +244,13 @@ async def soit_1():
     await paar1_soitmine(0, 1050, -1500)
 
     #paneb mootori teiseks sõiduks valmis
-    motor.run_to_absolute_position(port.E, 300, -300)
+    await motor.run_to_absolute_position(port.E, 315, -300)
     motor.stop(port.E)
 
 async def soit_2():
     """
-    Käivitab esimese missiooni, juhib roboti liikumist ja pööramist vastavalt ettenähtud ülesandele
-    info sõidu kohta leiab drivest sõitude kaustast või dokumentatsioonist
+    Käivitab teine missiooni, juhib roboti liikumist ja pööramist vastavalt ettenähtud ülesandele
+    info sõidu kohta leiab drivest sõitude kaustast või roboti disaini dokumentatsioonist soit_2 mime alt
 
     """
     motor.stop(port.E)
@@ -263,47 +263,59 @@ async def soit_2():
     await paar1_soitmine(0, 1000, 1200, aeglustus=2000)
     await motor.run_for_degrees(port.F, 105, 350)
     await runloop.sleep_ms(2000)
-    await motor.run_for_degrees(port.E, -75, 500)
+    await motor.run_for_degrees(port.E, -75, 550)
     await runloop.sleep_ms(1000)
-    motor.run_for_degrees(port.E, 60, 150)
+    motor.run_for_degrees(port.E, 60, 100)
     await paar1_soitmine(-13, -1050, 1750)
 
 async def soit_3():
     """
-    Käivitab esimese missiooni, juhib roboti liikumist ja pööramist vastavalt ettenähtud ülesandele
-    info sõidu kohta leiab drivest sõitude kaustast või dokumentatsioonist
+    Käivitab kolmanda missiooni, juhib roboti liikumist ja pööramist vastavalt ettenähtud ülesandele
+    info sõidu kohta leiab drivest sõitude kaustast või roboti disaini dokumentatsioonist soit_3 mime alt
 
     """
 
     #viib hai ära
     await paar1_soitmine(0, 1050, 100)
-    await pooramine(65)
+    await pooramine(60)
     await paar1_soitmine(0, 1050, 1400)
 
     # võtab 4 jala ära ja läheb teise kodu alasse
-    await paar1_soitmine(0, 1050, -350)
+    await paar1_soitmine(0, 1050, -400)
     await pooramine(45)
-    await paar1_soitmine(0, 1050, 1900)
+    await paar1_soitmine(0, 1050, 1750)
     await pooramine(50)
     await paar1_soitmine(0, 1050, -700)
     await paar1_soitmine(0, 1050, 1100)
 
 async def soit_4():
     """
-    Käivitab esimese missiooni, juhib roboti liikumist ja pööramist vastavalt ettenähtud ülesandele
-    info sõidu kohta leiab drivest sõitude kaustast või dokumentatsioonist
-
+    Käivitab neljanda missiooni, juhib roboti liikumist ja pööramist vastavalt ettenähtud ülesandele
+    info sõidu kohta leiab drivest sõitude kaustast või roboti disaini dokumentatsioonist soit_4 mime alt
     """
     #lükkab kala ära
     await paar1_soitmine(0, 1050, 200)
     await pooramine(-54)
-    await paar1_soitmine(2, 1050, 2000)
+    await paar1_soitmine(2, 1050, 2100)
     await pooramine(58)
 
     # võtab ära vee proovi
     await paar1_soitmine(0, 1050, 800)
-    await paar1_soitmine(0, 1050, -530)
-
+    await paar1_soitmine(0, 1050, -520)
+    await paar1_soitmine(0, 1050, 200)
+    await pooramine(90)
+    await paar1_soitmine(0, 1050, 700)
+    await pooramine(45)
+    await paar1_soitmine(0, 1050, 300)
+    await paar1_soitmine(0, -1050, 700, kiirendus=10000000, aeglustus=100000000)
+    await paar1_soitmine(0, 1050, 400)
+    await pooramine(45)
+    await paar1_soitmine(0, 1050, -1000)
+    await paar1_soitmine(0, 1050, 500)
+    await pooramine(-45)
+    await paar1_soitmine(0, 1050, 700)
+    await pooramine(45)
+    await paar1_soitmine(0, 1050, 1500)
 
 # peamine meetod mis kasutab teisi meetodeid et lahendada ülessandeid vaatab kas värvid on kalibreeritud ja kui ei ole siis kalibreerib ära
 async def soidu_tuvastus():
@@ -318,30 +330,32 @@ async def soidu_tuvastus():
             #kontrollib milline missioon on või kas moodul puudub
             if (varvi_tuvastus() == 0):
                     light_matrix.write("!")
+                    print("pole sõitu")
                     await runloop.sleep_ms(20)
             if (varvi_tuvastus() == 1):
                 light_matrix.write(str(1))
                 if(button.pressed(button.LEFT)):
                     await soit_1()
             if (varvi_tuvastus() == 2):
-                    light_matrix.write(str(2))
-                    if(button.pressed(button.LEFT)):
-                        await soit_2()
+                light_matrix.write(str(2))
+                if(button.pressed(button.LEFT)):
+                    await soit_2()
             if (varvi_tuvastus() == 3):
-                    light_matrix.write(str(3))
-                    if(button.pressed(button.LEFT)):
-                        await soit_3()
+                light_matrix.write(str(3))
+                if(button.pressed(button.LEFT)):
+                    await soit_3()
             if (varvi_tuvastus() == 4):
-                    light_matrix.write(str(4))
-                    if(button.pressed(button.LEFT)):
-                        await soit_4()
+                light_matrix.write(str(4))
+                print("sõit 4")
+                if(button.pressed(button.LEFT)):
+                    await soit_4()
             if (varvi_tuvastus() == 5):
-                    light_matrix.write(str(5))
-                    if(button.pressed(button.LEFT)):
-                        print('veel üks soit?')
+                light_matrix.write(str(5))
+                if(button.pressed(button.LEFT)):
+                    print('veel üks soit?')
         # kui ei ole kalibreeritud siis kalibreerib
         else:
             await varvi_kalib()
 
-#motor.run_to_absolute_position(port.E, 300, -300)
-runloop.run(soit_3())
+#motor.run_to_absolute_position(port.E, 315, -300)
+runloop.run(soit_4())
