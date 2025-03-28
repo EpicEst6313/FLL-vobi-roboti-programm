@@ -4,7 +4,7 @@ from hub import port, button, light_matrix
 varvi_andm = {}
 kalib_tehtud = False
 
-MISSIOONI_ARV = 3
+MISSIOONI_ARV = 4
 RATTA_D = 5.6
 RATASTE_VAH_KAUGUS = 11.3
 TEISENDUS_TEGUR = 0.6
@@ -194,6 +194,9 @@ async def varvi_kalib():
     while button.pressed(button.LEFT) or button.pressed(button.RIGHT):
         await runloop.sleep_ms(10)
 
+    # Kalibreerimise andmete prindimine õigesti järjekorras
+
+    print(varvi_andm)
 
 def varvi_tuvastus():
     """
@@ -209,7 +212,7 @@ def varvi_tuvastus():
     vektori_kaugus = []
 
     # Arvuta kaugused kalibreeritud andmetest
-    for i in varvi_andm.keys():
+    for i in range(1, MISSIOONI_ARV+1):
         vektori_kaugus.append(vektor(varvi_andm[i], varv))
 
     # Kui minimaalne kaugus jääb alla määratud piiri, tagasta värvi ID
@@ -295,8 +298,8 @@ async def soit_4():
     """
     #lükkab kala ära
     await paar1_soitmine(0, 1050, 200)
-    await pooramine(-54)
-    await paar1_soitmine(2, 1050, 2100)
+    await pooramine(-53)
+    await paar1_soitmine(2, 1050, 2150)
     await pooramine(58)
 
     # võtab ära vee proovi
@@ -307,15 +310,15 @@ async def soit_4():
     await paar1_soitmine(0, 1050, 700)
     await pooramine(45)
     await paar1_soitmine(0, 1050, 300)
-    await paar1_soitmine(0, -1050, 700, kiirendus=10000000, aeglustus=100000000)
-    await paar1_soitmine(0, 1050, 400)
+    await motor.run_for_degrees(port.E, 180, 550)
+    #tagurdab üle platsi ülessandesse
+    await paar1_soitmine(0, -1050, 800, kiirendus=10000000, aeglustus=100000000)
+    await paar1_soitmine(0, 1050, 500)
     await pooramine(45)
     await paar1_soitmine(0, 1050, -1000)
-    await paar1_soitmine(0, 1050, 500)
-    await pooramine(-45)
-    await paar1_soitmine(0, 1050, 700)
-    await pooramine(45)
-    await paar1_soitmine(0, 1050, 1500)
+    await paar1_soitmine(0, 1050, 400)
+    await pooramine(-55)
+    await paar1_soitmine(0, 1050, 1700)
 
 # peamine meetod mis kasutab teisi meetodeid et lahendada ülessandeid vaatab kas värvid on kalibreeritud ja kui ei ole siis kalibreerib ära
 async def soidu_tuvastus():
@@ -346,7 +349,6 @@ async def soidu_tuvastus():
                     await soit_3()
             if (varvi_tuvastus() == 4):
                 light_matrix.write(str(4))
-                print("sõit 4")
                 if(button.pressed(button.LEFT)):
                     await soit_4()
             if (varvi_tuvastus() == 5):
@@ -358,4 +360,4 @@ async def soidu_tuvastus():
             await varvi_kalib()
 
 #motor.run_to_absolute_position(port.E, 315, -300)
-runloop.run(soit_4())
+runloop.run(soidu_tuvastus())
