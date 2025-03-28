@@ -18,6 +18,9 @@ tahtsin proovida uut disaini hammasratastega ning parandada viga, et laadimis po
 
 ## Pildid
 
+<img src="roboti%20pildid/baas1.jpg" alt="Alt Text" width="500">       <img src="roboti%20pildid/baas2.jpg" alt="Alt Text" width="500">
+<img src="roboti%20pildid/baas3.jpg" alt="Alt Text" width="500">
+
 ## Vanad versioonid
 
 ### Vana roboti disain (2. disain)
