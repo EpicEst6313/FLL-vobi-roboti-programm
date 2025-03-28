@@ -16,11 +16,13 @@ korjab üless platsilt ühe kirilli ja võtab veeproovi, vabastab hai ja lükkab
 
 ## Paigutus platsil
 
-- jassu pane pildid
+<img src="roboti%20pildid/20250211_144552.jpg" alt="Alt Text" width="500">       <img src="roboti%20pildid/20250211_144557.jpg" alt="Alt Text" width="500">
+<img src="roboti%20pildid/20250211_144609.jpg" alt="Alt Text" width="500">
 
 ## Pildid moodulist
 
-- jassu pildid
+<img src="roboti%20pildid/1.moodul3.jpg" alt="Alt Text" width="500">        <img src="roboti%20pildid/esimene_moodul1.jpg" alt="Alt Text" width="500">
+<img src="roboti%20pildid/esimenemoodul2.jpg" alt="Alt Text" width="500">
 
 ## Head küljed
 
@@ -48,11 +50,12 @@ Tõstab masti üless ja varastab aarde laeka ning napsab kirilli eest ära ja pa
 
 ## Paigutus platsil
 
-- jassu pildid
+<img src="roboti%20pildid/20250217_172351.jpg" alt="Alt Text" width="500">        <img src="roboti%20pildid/20250217_172401.jpg" alt="Alt Text" width="500">
 
 ## Pildid moodulist
 
-- jassu pildid
+<img src="roboti%20pildid/2.moodul1.jpg" alt="Alt Text" width="500">          <img src="roboti%20pildid/2.moodul2.jpg" alt="Alt Text" width="500">
+<img src="roboti%20pildid/2.moodul3.jpg" alt="Alt Text" width="500">          <img src="roboti%20pildid/2.moodul4.jpg" alt="Alt Text" width="500">
 
 ## Head küljed
 
@@ -75,6 +78,51 @@ Tõstab masti üless ja varastab aarde laeka ning napsab kirilli eest ära ja pa
 
 ## Pildid vanast number 2 moodulist
 
-- jassu pane siia(võid mult küsid v elisel peaks ka olema vb drives)
+<img src="roboti%20pildid/vanateine1.jpg" alt="Alt Text" width="500">          <img src="roboti%20pildid/vanateine2.jpg" alt="Alt Text" width="500">
 
 # 3. moodul
+
+
+## Punktid
+
+
+**Kokku:**
+
+## Paigutus platsil
+
+
+
+## Pildid moodulist
+
+
+
+## Head küljed
+
+
+
+## halvad küljed
+
+
+
+# 4. moodul
+
+
+## Punktid
+
+
+**Kokku:**
+
+## Paigutus platsil
+
+
+
+## Pildid moodulist
+
+
+
+## Head küljed
+
+
+
+## halvad küljed
+
