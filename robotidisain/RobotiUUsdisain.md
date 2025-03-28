@@ -110,8 +110,12 @@ Tõstab masti üless ja varastab aarde laeka ning napsab kirilli eest ära ja pa
 
 ## Punktid
 
+- **Pinnaseproov:** 10 p
+- **Ühisülesanne:** 30 p
+- **Merikurat:** 30 p
+- **Sonar:** 20 p
 
-**Kokku:**
+**Kokku:** 90 p
 
 ## Paigutus platsil
 
@@ -124,7 +128,11 @@ Tõstab masti üless ja varastab aarde laeka ning napsab kirilli eest ära ja pa
 
 ## Head küljed
 
-
+paikapanemine ei peagi ülitäpne olema!
+päris täpne, robustne ja peab igasugusele abuse’ile (nt mitte-nii-hoolsalt kasti panemise) vastu (testitud, kõige parem moodul, kui tasakaaluprobleem välja arvata)
 
 ## halvad küljed
 
+paika panemine pole väga täpne,
+koralli segmendid kukkusid platsile viimisel maha,
+raskuskese probleemne
