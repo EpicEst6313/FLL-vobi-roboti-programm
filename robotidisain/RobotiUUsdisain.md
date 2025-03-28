@@ -36,3 +36,45 @@ korjab üless platsilt ühe kirilli ja võtab veeproovi, vabastab hai ja lükkab
 
 # 2. moodul
 
+Tõstab masti üless ja varastab aarde laeka ning napsab kirilli eest ära ja paneb sukelduja korall rahule
+
+## Punktid
+
+- **Masti üless tõstmine:** +30 p
+- **Aardelaek varastamine:** +20 p
+- **sukelduja transport koralli toe külge:** +20 p
+
+**Kokku:** 70p
+
+## Paigutus platsil
+
+- jassu pildid
+
+## Pildid moodulist
+
+- jassu pildid
+
+## Head küljed
+
+- jõuab kodualasse koguaeg tagasi
+- sukelduja paneb 100% rippuma
+- seda on hea progeda annab piisavalt eksimis ruumi
+
+## halvad küljed
+
+- sõidab vahepeal mastile liiga kiiresti otsa
+
+## miks tegime vana mooduli number 2 ümber?
+
+- Sellel oli raskuse probleemid
+- kohmakalt suur
+- probleeme käppadega liiga rasked ja pidi vastu raskust kasutama
+- jõhkralt raske programmeerida
+- ebatäpne
+- üless sättimine võttis väga kaua aega
+
+## Pildid vanast number 2 moodulist
+
+- jassu pane siia(võid mult küsid v elisel peaks ka olema vb drives)
+
+# 3. moodul
