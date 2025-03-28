@@ -63,7 +63,7 @@ Tõstab masti üless ja varastab aarde laeka ning napsab kirilli eest ära ja pa
 
 ## Sõidu plaan
 
-<img src="roboti%20pildid/Kuvatõmmis%202025-03-28%20180552.pngg" alt="Alt Text" width="500"> 
+<img src="roboti%20pildid/Kuvatõmmis%202025-03-28%20180552.png" alt="Alt Text" width="500"> 
 
 ## Head küljed
 
@@ -93,12 +93,15 @@ Tõstab masti üless ja varastab aarde laeka ning napsab kirilli eest ära ja pa
 
 ## Punktid
 
+- **Hai ära viimine:** 20p
+- **4-jala rööv:** 20p
 
-**Kokku:**
+**Kokku:** 40p
 
 ## Paigutus platsil
 
-
+<img src="roboti%20pildid/3.paigutus1.jpg" alt="Alt Text" width="500">        <img src="roboti%20pildid/3.paikutus2.jpg" alt="Alt Text" width="500">
+<img src="roboti%20pildid/3.paikutus3.jpg" alt="Alt Text" width="500">
 
 ## Pildid moodulist
 
@@ -111,23 +114,26 @@ Tõstab masti üless ja varastab aarde laeka ning napsab kirilli eest ära ja pa
 
 ## Head küljed
 
-
+- Kerge programmeerida
+- Kerge paika panna
+- Kompaktne
 
 ## halvad küljed
 
-
+- Vähe punkte
+- Vahepeal sõidab objektile otsa
 
 # 4. moodul
 
 
 ## Punktid
 
-- **Pinnaseproov:** 10 p
-- **Ühisülesanne:** 30 p
-- **Merikurat:** 30 p
-- **Sonar:** 20 p
+- **Pinnaseproov:** 10p
+- **Ühisülesanne:** 30p
+- **Merikurat:** 30p
+- **Sonar:** 20p
 
-**Kokku:** 90 p
+**Kokku:** 90p
 
 ## Paigutus platsil
 
@@ -144,11 +150,10 @@ Tõstab masti üless ja varastab aarde laeka ning napsab kirilli eest ära ja pa
 
 ## Head küljed
 
-paikapanemine ei peagi ülitäpne olema!
-päris täpne, robustne ja peab igasugusele abuse’ile (nt mitte-nii-hoolsalt kasti panemise) vastu (testitud, kõige parem moodul, kui tasakaaluprobleem välja arvata)
+- Palju punkte
+- Kompaktne
 
 ## halvad küljed
 
-paika panemine pole väga täpne,
-koralli segmendid kukkusid platsile viimisel maha,
-raskuskese probleemne
+- Kehv hammasrattaülekanne
+- Suht suur võimalus ebatäpsuseks
