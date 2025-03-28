@@ -1,3 +1,61 @@
+# Baasrobot
+
+
+## Head küljed
+
+- Kasutame sõitmise ajal maksimum võimsust, mis tähendab, et mootorid on täpsemad ja vahemaa läbimine on täpsem
+- kuubi kujulise roboti peale on hea ehitada erinevaid moodulied
+
+## Halvad küljed
+
+- Ülekanne käib üle, teeb roboti ebatäpsemaks ning roboti maksimum kiirus on aeglane,
+- Spike robotis olev gyroskoop ei ole usaldusväärne ning ei tööta ja ei lase otse sõitu parandada
+- Ei pidanud drop testi vastu.
+
+## Miks sellise versiooni tegime
+
+tahtsin proovida uut disaini hammasratastega ning parandada viga, et laadimis port oli väga raske ligi pääseda.
+
+## Pildid
+
+## Vanad versioonid
+
+### Vana roboti disain (2. disain)
+
+**Head küljed**
+
+-kompaktne ja pidas drop testi vastu,
+- massi kese peamiselt sõidu rataste peal
+- laadimis port oli kergesti juurdepääsetav kuni otsustasime pöörata spike hubi ümber sest nupud olid väärakas kohas.
+
+**Halvad küljed**
+
+- Laadimis port oli kinni kaetud
+- gyroga ei saa teha otse sõitu sest see lihtsalt ei ole töötanud aga eelmine aasta parandas roboti täpsust väga korralikult
+- ratta valik on ka natuke halb, kuna need rattad saavad libiseda ja see aga jälle tähendab, et roboti täpsus kannatab
+
+
+**Pildid**
+
+<img src="roboti%20pildid/vana1.jpg" alt="Alt Text" width="500">       <img src="roboti%20pildid/vana2.jpg" alt="Alt Text" width="500">
+<img src="roboti%20pildid/vana3.jpg" alt="Alt Text" width="500">
+
+### Algne Robot disain (1. disain)
+
+**Head küljed**
+
+- See robot oli väga kompaktne ja ei raisanud ruumi
+- Aku vahetus oli kerge ning sai kasutada teist hub’i et laadida akut samal ajal kasutades teise hub’i akut programmeerimiseks.
+
+**Halvad küljed**
+
+- Roboti massi kese täpselt keskel mis tähendab, aga seda et tagumistele ratastele ei jäänud mingisugust viisi liigutada, kui moodulid peale panna.
+
+**Pildid**
+
+<img src="roboti%20pildid/algne1.jpg" alt="Alt Text" width="500">       <img src="roboti%20pildid/algne2.jpg" alt="Alt Text" width="500">
+<img src="roboti%20pildid/algne3.jpg" alt="Alt Text" width="500">
+
 # 1. moodul
 
 korjab üless platsilt ühe kirilli ja võtab veeproovi, vabastab hai ja lükkab korallipungad õiget pidi ja võtab kaasa sukelduja ja läheb kodualasse
@@ -93,10 +151,10 @@ Tõstab masti üless ja varastab aarde laeka ning napsab kirilli eest ära ja pa
 
 ## Punktid
 
-- **Hai ära viimine:** 20p
+- **Hai ära viimine:** 10p
 - **4-jala rööv:** 20p
 
-**Kokku:** 40p
+**Kokku:** 30p
 
 ## Paigutus platsil
 
