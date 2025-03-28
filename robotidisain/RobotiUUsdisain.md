@@ -24,6 +24,10 @@ korjab üless platsilt ühe kirilli ja võtab veeproovi, vabastab hai ja lükkab
 <img src="roboti%20pildid/1.moodul3.jpg" alt="Alt Text" width="500">        <img src="roboti%20pildid/esimene_moodul1.jpg" alt="Alt Text" width="500">
 <img src="roboti%20pildid/esimenemoodul2.jpg" alt="Alt Text" width="500">
 
+## Sõidu plaan
+
+<img src="roboti%20pildid/Kuvatõmmis%202025-03-28%20180601.png" alt="Alt Text" width="500"> 
+
 ## Head küljed
 
 - istub ilusti roboti peal
@@ -56,6 +60,10 @@ Tõstab masti üless ja varastab aarde laeka ning napsab kirilli eest ära ja pa
 
 <img src="roboti%20pildid/2.moodul1.jpg" alt="Alt Text" width="500">          <img src="roboti%20pildid/2.moodul2.jpg" alt="Alt Text" width="500">
 <img src="roboti%20pildid/2.moodul3.jpg" alt="Alt Text" width="500">          <img src="roboti%20pildid/2.moodul4.jpg" alt="Alt Text" width="500">
+
+## Sõidu plaan
+
+<img src="roboti%20pildid/Kuvatõmmis%202025-03-28%20180552.pngg" alt="Alt Text" width="500"> 
 
 ## Head küljed
 
@@ -97,6 +105,10 @@ Tõstab masti üless ja varastab aarde laeka ning napsab kirilli eest ära ja pa
 <img src="roboti%20pildid/3.1.jpg" alt="Alt Text" width="500">        <img src="roboti%20pildid/3.2.jpg" alt="Alt Text" width="500">
 <img src="roboti%20pildid/3.3.jpg" alt="Alt Text" width="500">
 
+## Sõidu plaan
+
+<img src="roboti%20pildid/Kuvatõmmis%202025-03-28%20180544.png" alt="Alt Text" width="500"> 
+
 ## Head küljed
 
 
@@ -125,6 +137,10 @@ Tõstab masti üless ja varastab aarde laeka ning napsab kirilli eest ära ja pa
 
 <img src="roboti%20pildid/4.1.jpg" alt="Alt Text" width="500">        <img src="roboti%20pildid/4.2.jpg" alt="Alt Text" width="500">
 <img src="roboti%20pildid/4.3.jpg" alt="Alt Text" width="500">        <img src="roboti%20pildid/4.4.jpg" alt="Alt Text" width="500">
+
+## Sõidu plaan
+
+<img src="roboti%20pildid/Kuvatõmmis%202025-03-28%20180526.png" alt="Alt Text" width="500"> 
 
 ## Head küljed
 
