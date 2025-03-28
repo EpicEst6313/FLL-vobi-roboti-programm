@@ -94,7 +94,8 @@ Tõstab masti üless ja varastab aarde laeka ning napsab kirilli eest ära ja pa
 
 ## Pildid moodulist
 
-
+<img src="roboti%20pildid/3.1.jpg" alt="Alt Text" width="500">        <img src="roboti%20pildid/3.2.jpg" alt="Alt Text" width="500">
+<img src="roboti%20pildid/3.3.jpg" alt="Alt Text" width="500">
 
 ## Head küljed
 
@@ -118,7 +119,8 @@ Tõstab masti üless ja varastab aarde laeka ning napsab kirilli eest ära ja pa
 
 ## Pildid moodulist
 
-
+<img src="roboti%20pildid/4.1.jpg" alt="Alt Text" width="500">        <img src="roboti%20pildid/4.2.jpg" alt="Alt Text" width="500">
+<img src="roboti%20pildid/4.3.jpg" alt="Alt Text" width="500">        <img src="roboti%20pildid/4.4.jpg" alt="Alt Text" width="500">
 
 ## Head küljed
 
