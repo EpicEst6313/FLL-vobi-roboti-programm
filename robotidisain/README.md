@@ -1,4 +1,5 @@
 # 1. moodul
+
   ## Ehitus ja eesmärgid
  
 See moodul korjab platsilt ühe krilli ja ühe proovidest, vabastab hai koopast ja lükkab üles
@@ -29,6 +30,7 @@ pildid moodulist:
 - see moodul libiseb vastu maad seda oli/on väga keeruline mudeliks teha
 
 # 2. moodul
+
   ## Ehitus ja eesmärgid
 **Uus (17.02.25) 2. moodul**
 
@@ -87,8 +89,7 @@ Pildid vanast moodulist:
   - eelmine versioon ei teinud asju korralikult ära
   - oli kohutav progeda
 
-  ## Muudatused
-**endine 3. moodul:**
+## miks ei sobinud vana moodul?
 
 Oleks ära toonud kolmhargi (kahjuks praktikas ei saanud me seda töötma) ja viis hai haide elupaika. Pärast kolmharki välja tõstmist korjas krillid platsilt ja ühe korallrahu segmenti ning pidi nelijala ära tegema 
 
