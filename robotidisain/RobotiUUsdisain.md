@@ -198,7 +198,8 @@ Tõstab masti üless ja varastab aarde laeka ning napsab kirilli eest ära ja pa
 
 ## Paigutus platsil
 
-
+<img src="roboti%20pildid/4.paik1.jpg" alt="Alt Text" width="500">       <img src="roboti%20pildid/4.paik2.jpg" alt="Alt Text" width="500">
+<img src="roboti%20pildid/4.paik3.jpg" alt="Alt Text" width="500">
 
 ## Pildid moodulist
 
